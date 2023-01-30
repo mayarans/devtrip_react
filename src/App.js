@@ -1,11 +1,11 @@
-import './App.css';
-import './index'
-import NavBar from './components/navbar';
-import React, { useEffect } from 'react';
-import CollectionCards from './components/collection_cards';
-import Footer from './components/footer';
-import ContainerSlideShow from './components/container_slideshow';
-import ModalContent from './components/modal_content';
+import "./App.css"
+import "./index"
+import NavBar from "./components/navbar"
+import React, { useEffect } from "react"
+import CollectionCards from "./components/collectionCards"
+import Footer from "./components/footer"
+import ContainerSlideShow from "./components/containerSlideshow"
+import ModalContent from "./components/modalContent"
 
 function App() {
   useEffect(() => {
@@ -23,10 +23,10 @@ function App() {
         <CollectionCards />
         <ContainerSlideShow />
       </main>
-      
+
       <Footer />
     </div>
   )
 }
 
-export default App;
+export default App
