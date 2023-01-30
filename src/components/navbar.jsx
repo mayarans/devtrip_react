@@ -1,4 +1,4 @@
-import SearchField from "./search_field"
+import SearchField from "./inputSearch"
 import logo from "./assets/logo.png"
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faSortDown } from "@fortawesome/free-solid-svg-icons"
@@ -11,7 +11,7 @@ export default function NavBar() {
         <img src={logo} alt="" id="image-logo" />
       </div>
 
-      {<SearchField />}
+      <SearchField />
 
       <div className="location">
         <FontAwesomeIcon icon={faLocationDot} />

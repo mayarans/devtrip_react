@@ -8,7 +8,7 @@ export default function PopUp () {
         <img
           src={google}
           alt="logo do google"
-          className="login-with"
+          
         />
       </div>
 
