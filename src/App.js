@@ -1,11 +1,9 @@
 import "./App.css"
 import "./index"
-import NavBar from "./components/navbar"
 import React, { useEffect } from "react"
-import CollectionCards from "./components/collectionCards"
-import Footer from "./components/footer"
-import ContainerSlideShow from "./components/containerSlideshow"
-import ModalContent from "./components/modalContent"
+import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom"
+import Home from "./routes/Home"
+import Details from "./routes/Details"
 
 function App() {
   useEffect(() => {
@@ -16,15 +14,13 @@ function App() {
   })
   return (
     <div className="App">
-      {/* NAVBAR COMPONENT */}
-      <NavBar />
-      <main>
-        <ModalContent />
-        <CollectionCards />
-        <ContainerSlideShow />
-      </main>
-
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path="/home" element={<Home />} />
+          <Route path="/detalhes/:id" element={<Details />} />
+          <Route path="/" element={<Navigate replace to="/home" />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

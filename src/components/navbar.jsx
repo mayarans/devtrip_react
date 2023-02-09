@@ -3,12 +3,15 @@ import logo from "./assets/logo.png"
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faSortDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link } from "react-router-dom"
 
 export default function NavBar() {
   return (
     <section className="navbar">
       <div className="logo">
-        <img src={logo} alt="" id="image-logo" />
+        <Link to="/home">
+          <img src={logo} alt="" id="image-logo" />
+        </Link>
       </div>
 
       <SearchField />

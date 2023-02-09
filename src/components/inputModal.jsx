@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default function InputModal ({inputFieldClass, iconName, placeHolder, errorMessage}) {
   let inputType = "text"
-  if (inputFieldClass=="email") {
+  if (inputFieldClass==="email") {
     inputType = "email"
-  } else if (inputFieldClass=="password") {
+  } else if (inputFieldClass==="password") {
     inputType = "password"
   }
   return (

@@ -1,8 +1,5 @@
 import Slide from "./slide"
-import curso from "./assets/curso.png"
-import show from "./assets/show.png"
-import show2 from "./assets/show2.png"
-import rave from "./assets/rave.png"
+import data from "../events.json"
 
 export default function ContainerSlideShow() {
   return (
@@ -21,45 +18,19 @@ export default function ContainerSlideShow() {
 
         <div className="slides">
           <div className="container-slides">
-            <Slide
-              Class={"first slide"}
-              SlideImage={show}
-              EventDetails={{
-                date: "SEX, 03/02 - 22H",
-                title: "Samara Almeida live session",
-                local: "Ao vivo na Twitch",
-              }}
-            />
-
-            <Slide
-              Class={"slide"}
-              SlideImage={show2}
-              EventDetails={{
-                date: "DOM, 12/02 - 20H",
-                title: "Sertanejo acústico",
-                local: "Bar do Raimundo, Serra Talhada - Pernambuco",
-              }}
-            />
-
-            <Slide
-              Class={"slide"}
-              SlideImage={rave}
-              EventDetails={{
-                date: "QUI, 23/03 - 22H",
-                title: "Rave Funk",
-                local: "Estação das Docas, Belém - Pará",
-              }}
-            />
-
-            <Slide
-              Class={"slide"}
-              SlideImage={curso}
-              EventDetails={{
-                date: "SAB, 21/01 - 16H",
-                title: "Barnardo Carvalho - Workshop de Violão",
-                local: "Zepellin MIX Gourmeteria, Vitória - Espírito Santo",
-              }}
-            />
+            {data.map((element, i) => (
+              <Slide
+                key={element.id}
+                id={element.id}
+                Class={element.id === "1" ? "first slide" : "slide"}
+                SlideImage={process.env.PUBLIC_URL + element.url}
+                EventDetails={{
+                  date: element.date,
+                  title: element.title,
+                  local: element.local,
+                }}
+              />
+            ))}
           </div>
         </div>
 

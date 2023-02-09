@@ -1,4 +1,6 @@
-export default function Slide({ Class, SlideImage, EventDetails }) {
+import { Link } from "react-router-dom"
+
+export default function Slide({ id, Class, SlideImage, EventDetails }) {
   return (
     <div className={Class}>
       <img src={SlideImage} alt="imagem" />
@@ -8,7 +10,9 @@ export default function Slide({ Class, SlideImage, EventDetails }) {
           <h1 className="event-details-title">{EventDetails["title"]}</h1>
           <span className="event-details-local">{EventDetails["local"]}</span>
         </div>
-        <button className="event-details-button">VER DETALHES</button>
+        <Link to={"/detalhes/" + id} target="_blank">
+          <button className="event-details-button">VER DETALHES</button>
+        </Link>
       </div>
     </div>
   )

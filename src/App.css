@@ -1,5 +1,9 @@
-body::-webkit-input-placeholder, body:-ms-input-placeholder, body:-moz-placeholder, body::-moz-placeholder, body::placeholder{
-  font-family: 'Sen', sans-serif;
+body::-webkit-input-placeholder,
+body:-ms-input-placeholder,
+body:-moz-placeholder,
+body::-moz-placeholder,
+body::placeholder {
+  font-family: "Sen", sans-serif;
   font-size: 60px;
 }
 
@@ -7,10 +11,9 @@ body {
   background-color: white;
   color: rgb(25, 31, 40);
   margin: 0;
-  font-family: 'Sen', sans-serif;
+  font-family: "Sen", sans-serif;
   line-height: 1.2;
 }
-
 
 /* ESTILIZAÇÃO DA BARRA DE NAVEGAÇÃO  */
 .navbar {
@@ -79,12 +82,15 @@ body {
   width: 90%;
 }
 
-input:focus, input, select {
+input:focus,
+input,
+select {
   font-family: inherit;
 }
 
-.sign-up-button, .login-button {
-  font-family: 'Sen', sans-serif;
+.sign-up-button,
+.login-button {
+  font-family: "Sen", sans-serif;
   font-weight: bold;
   background-color: white;
   color: inherit;
@@ -94,7 +100,7 @@ input:focus, input, select {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
-} 
+}
 
 .sign-up-button:hover {
   background-color: #a758ff;
@@ -102,7 +108,7 @@ input:focus, input, select {
   transition: 0.3s;
 }
 
-.login-button  {
+.login-button {
   border: none;
   background-color: transparent;
 }
@@ -141,10 +147,11 @@ input:focus, input, select {
 
 .container-collection-card-icons {
   display: flex;
-  gap: 3px
+  gap: 3px;
 }
 
-.fa-circle-chevron-left, .fa-circle-chevron-right {
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
   width: auto;
   color: #cca7f7;
   font-size: 22px;
@@ -155,12 +162,11 @@ input:focus, input, select {
   cursor: pointer;
 }
 
-
 /* CARDS */
 .container-card-and-text {
   display: flex;
-  justify-content: space-between; 
-  gap: 30px; 
+  justify-content: space-between;
+  gap: 30px;
   overflow: hidden;
   scroll-behavior: smooth;
 }
@@ -198,14 +204,14 @@ input:focus, input, select {
   transition: 0.5s;
 }
 
-.image-grow{
-  border-radius: 50%; 
+.image-grow {
+  border-radius: 50%;
   width: 120px;
   height: 120px;
   overflow: hidden;
 }
 
-.image-card { 
+.image-card {
   width: 120px;
   height: 120px;
 }
@@ -246,7 +252,6 @@ input:focus, input, select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
 }
 
 .slides {
@@ -258,7 +263,6 @@ input:focus, input, select {
   border-radius: 8px;
   align-items: center;
   padding: 20px;
-
 }
 
 .slide-information {
@@ -273,13 +277,12 @@ input:focus, input, select {
   width: 300px;
 }
 
-.event-details-date{
+.event-details-date {
   color: #a758ff;
   font-weight: bold;
 }
 
 .event-details-title {
-  
   font-size: 28px;
   font-weight: 700;
 }
@@ -290,6 +293,7 @@ input:focus, input, select {
 }
 
 .event-details-button {
+  text-decoration: none;
   color: #a758ff;
   width: 160px;
   height: 50px;
@@ -315,16 +319,15 @@ input:focus, input, select {
   width: 400%;
   height: 400px;
   display: none;
-  
 }
 
 .slide {
   display: flex;
   width: 25%;
   border-radius: 13px;
-  box-shadow: rgb(25 31 40 / 15%) 6px -6px 10px, rgb(25 31 40 / 15%) 0px 6px 10px;
+  box-shadow: rgb(25 31 40 / 15%) 6px -6px 10px,
+    rgb(25 31 40 / 15%) 0px 6px 10px;
   margin-right: 30px;
-  
 }
 
 .slide img {
@@ -348,7 +351,6 @@ input:focus, input, select {
   transition: 0.5s;
   align-items: center;
   justify-content: center;
-
 }
 
 .manual-btn-clicked {
@@ -454,7 +456,9 @@ footer {
   cursor: pointer;
 }
 
-.sign-up-modal-content, .login-modal-content, .location-modal-content {
+.sign-up-modal-content,
+.login-modal-content,
+.location-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -490,12 +494,11 @@ footer {
   top: 18px;
   right: 5px;
   z-index: 100;
-
 }
 
 .icon-error {
   visibility: hidden;
-  color:rgb(156, 5, 5);
+  color: rgb(156, 5, 5);
   position: absolute;
   margin-left: -36px;
   margin-top: 11px;
@@ -509,7 +512,10 @@ footer {
   margin-top: 12px;
 }
 
-#email, #password, #name, #last-name {
+#email,
+#password,
+#name,
+#last-name {
   height: 31px;
   padding: 5px 15px;
   border: none;
@@ -539,7 +545,6 @@ footer {
   background-color: #aa6eee;
 }
 
-
 .required-field {
   color: red;
   visibility: hidden;
@@ -548,40 +553,46 @@ footer {
   padding-top: 2px;
 }
 
-.signup-input, .login-input {
+.signup-input,
+.login-input {
   display: flex;
   align-items: center;
   margin-top: 15px;
   border-bottom: 1px solid #a758ff;
 }
 
-.icon-signup, .icon-login {
+.icon-signup,
+.icon-login {
   font-size: 15px;
   padding-top: 3.5px;
   padding-left: 10px;
   color: rgb(187, 187, 187);
 }
 
-.signup-title, .login-title {
+.signup-title,
+.login-title {
   text-align: center;
   font-size: 26px;
   font-weight: 400;
   margin: 10px 0px 10px;
 }
 
-.signup-with, .login-with {
+.signup-with,
+.login-with {
   display: flex;
   gap: 100px;
   justify-content: center;
   padding-bottom: 18px;
 }
 
-.signup-google img, .login-google img {
+.signup-google img,
+.login-google img {
   height: 35px;
-  padding-top: 2px ;
+  padding-top: 2px;
 }
 
-.signup-facebook img, .login-facebook img {
+.signup-facebook img,
+.login-facebook img {
   height: 37px;
 }
 
@@ -593,7 +604,8 @@ footer {
   padding: 3px;
 }
 
-#login span, #signup span {
+#login span,
+#signup span {
   color: #a758ff;
   cursor: pointer;
   font-weight: bold;
@@ -614,9 +626,6 @@ footer {
   flex-direction: column;
   width: 90%;
   padding: 0px 24px;
-  
-  
-
 }
 
 .search-location {
@@ -645,10 +654,10 @@ footer {
   border-bottom: 1px solid rgb(221, 224, 228);
   border-top: 1px solid rgb(221, 224, 228);
   cursor: pointer;
-  
 }
 
-.actual-location:hover, .modal-location-cities ul li:hover {
+.actual-location:hover,
+.modal-location-cities ul li:hover {
   background-color: rgb(245, 247, 248);
 }
 
@@ -674,7 +683,7 @@ footer {
   padding: 0;
 }
 
-.modal-location-cities ul li{
+.modal-location-cities ul li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -688,3 +697,121 @@ footer {
   border: 1px solid #a758ff;
 }
 
+/* PÁGINA DETAILS */
+
+/* HEADER */
+
+.header-logo {
+  display: flex;
+  height: 7vh;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* BANNER */
+
+.event-banner-block {
+  height: 65vh;
+  overflow: hidden;
+}
+
+.image-banner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: -430px auto 0;
+  position: absolute;
+}
+
+.image-banner img {
+  width: 800px;
+  border-radius: 12px;
+}
+
+.event-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.event-banner img {
+  width: 100%;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+/* DETALHES DO BANNER */
+.banner-details {
+  max-width: 1130px;
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+
+.banner-information {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.banner-information .fa-location-dot,
+.banner-information .fa-clock {
+  margin-right: 10px;
+  color: #a758ff;
+}
+
+.banner-title {
+  font-size: 45px;
+  font-weight: bold;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+/* INGRESSOS */
+.banner-ticket {
+  border: 1px solid #a758ff;
+  border-radius: 12px;
+  align-items: center;
+  width: 30vw;
+  align-self: center;
+}
+
+.ticket-title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #a758ff;
+  background-color: #a758ff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  justify-content: center;
+}
+
+.ticket-title h4 {
+  margin: 10px;
+}
+
+.banner-ticket ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tickets-types {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-type {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.ticket-type li {
+  padding: 5px 20px;
+}
+
+.tickets-types ul:hover {
+  background-color: rgb(245, 247, 248);
+}
