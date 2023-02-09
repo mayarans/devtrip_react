@@ -4,7 +4,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons"
 export default function CloseModal() {
   return (
     <div className="close-modal">
-      <FontAwesomeIcon icon={faXmark}/>
+      <FontAwesomeIcon icon={faXmark} className="close-modal-icon" />
     </div>
   )
 }
