@@ -719,12 +719,12 @@ footer {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin: -430px auto 0;
+  margin: -67vh auto 0;
   position: absolute;
 }
 
 .image-banner img {
-  width: 800px;
+  height: 70vh;
   border-radius: 12px;
 }
 
