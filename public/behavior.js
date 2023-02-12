@@ -58,7 +58,6 @@ setInterval(function () {
   nextImage()
 }, 5000)
 
-
 getSlides.scrollLeft = 0
 function nextImage() {
   getSlides.scrollLeft += 1145
@@ -163,3 +162,17 @@ getGoogle.forEach((option, i) => {
     )
   })
 })
+
+// indo para a página de perfil
+
+const btnLoginSignUpModal = document.querySelectorAll("#button-cadastrar")
+
+btnLoginSignUpModal.forEach((button, i) => {
+  button.onclick = changeToProfile
+})
+
+function changeToProfile() {
+  document.querySelector(".profile").style.display = "flex"
+  document.querySelector(".login-signup").style.display = "none"
+  closeModals()
+}

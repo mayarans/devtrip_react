@@ -1,10 +1,6 @@
-export default function ButtonModal ({buttonText}) {
+export default function ButtonModal({ buttonText }) {
   return (
-    <button
-      type="submit"
-      id="button-cadastrar"
-      onclick="validate(email, senha, confirmarSenha)"
-    >
+    <button type="button" id="button-cadastrar" onclick="">
       {buttonText}
     </button>
   )

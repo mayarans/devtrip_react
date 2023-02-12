@@ -4,6 +4,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { faSortDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "react-router-dom"
+import Profile from "./collapsibleProfile"
 
 export default function NavBar() {
   return (
@@ -26,6 +27,8 @@ export default function NavBar() {
         <button className="login-button">ACESSE SUA CONTA</button>
         <button className="sign-up-button">CADASTRE-SE</button>
       </div>
+
+      <Profile />
     </section>
   )
 }

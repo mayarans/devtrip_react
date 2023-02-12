@@ -816,3 +816,10 @@ footer {
 .tickets-types ul:hover {
   background-color: rgb(245, 247, 248);
 }
+
+/* PÁGINA DE PERFIL */
+.profile {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}

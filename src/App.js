@@ -1,9 +1,15 @@
 import "./App.css"
 import "./index"
 import React, { useEffect } from "react"
-import {BrowserRouter as Router, Routes, Route, Navigate} from "react-router-dom"
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom"
 import Home from "./routes/Home"
 import Details from "./routes/Details"
+import Perfil from "./routes/Perfil"
 
 function App() {
   useEffect(() => {
@@ -16,9 +22,10 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/detalhes/:id" element={<Details />} />
-          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/perfil" element={<Perfil />} />
+          {/* <Route path="/" element={<Navigate replace to="/home" />} /> */}
         </Routes>
       </Router>
     </div>
