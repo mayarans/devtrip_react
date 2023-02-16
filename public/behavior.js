@@ -172,7 +172,7 @@ btnLoginSignUpModal.forEach((button, i) => {
 })
 
 function changeToProfile() {
-  document.querySelector(".profile").style.display = "flex"
+  document.querySelector(".header-profile").style.display = "flex"
   document.querySelector(".login-signup").style.display = "none"
   closeModals()
 }

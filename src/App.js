@@ -9,7 +9,7 @@ import {
 } from "react-router-dom"
 import Home from "./routes/Home"
 import Details from "./routes/Details"
-import Perfil from "./routes/Perfil"
+// import Perfil from "./routes/Perfil"
 
 function App() {
   useEffect(() => {
@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/detalhes/:id" element={<Details />} />
-          <Route path="/perfil" element={<Perfil />} />
+          {/* <Route path="/perfil" element={<Perfil />} /> */}
           {/* <Route path="/" element={<Navigate replace to="/home" />} /> */}
         </Routes>
       </Router>
