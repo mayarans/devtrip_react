@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <section className="navbar">
       <div className="logo">
-        <Link to="/home">
+        <Link to="/">
           <img src={logo} alt="" id="image-logo" />
         </Link>
       </div>
